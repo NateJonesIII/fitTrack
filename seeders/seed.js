@@ -4,7 +4,7 @@ let db = require("../models/exercise");
 
 // Mongoose connection to database
 mongoose.connect(
-	process.env.MONGODB_URI || "mongodb+srv://DJonesMan:AETobK5LDkqoAuPV@jcluster0.u6smb.mongodb.net/fitTrack?retryWrites=true&w=majority",
+	process.env.MONGODB_URI || "mongodb://localhost:27017/fitnesstracker",
 	{
 		useNewUrlParser: true,
 		useFindAndModify: false,
