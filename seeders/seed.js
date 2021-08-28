@@ -4,7 +4,7 @@ let db = require("../models/exercise");
 
 // Mongoose connection to database
 mongoose.connect(
-	process.env.MONGODB_URI || "mongodb://localhost:27017/fitnesstracker",
+	process.env.MONGODB_URI || "mongodb://localhost:27017/fitTracker",
 	{
 		useNewUrlParser: true,
 		useFindAndModify: false,
