@@ -1,6 +1,6 @@
 # Fit-Tracker
 
-##Links
+## Links
 
 - [Heroku](https://secure-fortress-32760.herokuapp.com/ "FitTracker")
 
