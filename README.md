@@ -2,7 +2,7 @@
 
 ##Links
 
-- [Heroku](https://secure-fortress-32760.herokuapp.com/ "FitTracker)
+- [Heroku](https://secure-fortress-32760.herokuapp.com/ "FitTracker")
 
 ## Creator
 
