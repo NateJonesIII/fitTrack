@@ -1,5 +1,9 @@
 # Fit-Tracker
 
+## Screenshot
+
+- <img width="1125" alt="fitTracker" src="https://github.com/NateJonesIII/fitTrack/blob/master/public/images/FitTrackerDashboard.png?raw=true">
+
 ## Links
 
 - [Heroku](https://secure-fortress-32760.herokuapp.com/ "FitTracker")
