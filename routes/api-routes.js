@@ -1,12 +1,15 @@
 // Import express router
 const router = require("express").Router();
 
+// Import Mongoose
+let mongoose = require("mongoose");
+
 // Import workout model
 const db = require("../models/exercise");
 
 // GET Request for getting all workouts
 router.get("/api/workouts", (req, res) => {
-	db.find().then((dbData) => {
+	db.Regimine.collection.find().then((dbData) => {
 			res.json(dbData);
 		}).catch((err) => {
 			res.json(err);
@@ -15,7 +18,7 @@ router.get("/api/workouts", (req, res) => {
 
 // GET request
 router.get("/api/workouts/range", (req, res) => {
-	db.find({}).then((dbData) => {
+	db.Regimine.collection.find({}).then((dbData) => {
 			res.json(dbData);
 		}).catch((err) => {
 			res.json(err);
@@ -24,7 +27,7 @@ router.get("/api/workouts/range", (req, res) => {
 
 // POST workout
 router.post("/api/workouts", ({ body }, res) => {
-	db.create(body).then((dbData) => {
+	db.Regimine.collection.create(body).then((dbData) => {
 			res.json(dbData);
 		}).catch((err) => {
 			res.json(err);
@@ -33,7 +36,7 @@ router.post("/api/workouts", ({ body }, res) => {
 
 // PUT/Update workout
 router.put("/api/workouts/:id", ({ body, params }, res) => {
-	db.findByIdAndUpdate(params.id, { $push: { exercises: body } }).then((dbData) => {
+	db.Regimine.collection.findByIdAndUpdate(params.id, { $push: { exercises: body } }).then((dbData) => {
 			res.json(dbData);
 		}).catch((err) => {
 			res.json(err);
